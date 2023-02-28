@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {`test`}
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
