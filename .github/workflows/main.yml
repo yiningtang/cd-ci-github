@@ -22,7 +22,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}. Env is ${{ENV}}"
+      - run: echo "🍏 This job's status is ${{ job.status }}. Env is ${{vars.ENV}}"
   build:
 
     runs-on: self-hosted
