@@ -8,6 +8,7 @@ on:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    environment: dev
     env: 
       HOST_NAME: testtesttest
     steps:
@@ -21,7 +22,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}. Env is ${{ENV}}"
+      - run: echo "🍏 This job's status is ${{ job.status }}. Env is ${{dev.ENV}}"
   build:
 
     runs-on: self-hosted
